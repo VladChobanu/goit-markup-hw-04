@@ -218,10 +218,12 @@ body {
 /* ----------------Festure---------------- */
 
 .feature {
-  display: flex;
-  justify-self: space-between;
+
+  height: 248px;
 }
 .features {
+  display: flex;
+  justify-self: space-between;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -239,11 +241,10 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.feature-list {
-  box-sizing: content-box;
+.feature-list{
   width: 270px;
-  height: 224px;
 }
+
 
 /* ----------------What do we do---------------- */
 
@@ -377,6 +378,7 @@ body {
   margin-right: 4px;
   margin-left: 4px;
   margin-bottom: 50px;
+  padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
@@ -388,21 +390,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.btn-all {
-  width: 73px;
-}
-.btn-webs {
-  width: 125px;
-}
-.btn-addition {
-  width: 112px;
-}
-.btn-design {
-  width: 103px;
-}
-.btn-marketing {
-  width: 130px;
-}
+
 /* -------------Projects section---------------- */
 
 h2 {
