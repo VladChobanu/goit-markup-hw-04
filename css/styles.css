@@ -322,11 +322,16 @@ body {
 .logo-white {
   color: var(--secondary-text-color);
 }
+address{
+  margin-top: 20px;
+}
 
 .address {
   color: var(--primary-text-color);
-
   font-style: normal;
+}
+.address li:not(:last-child){
+  margin-bottom: 9px;
 }
 
 .address .location {
@@ -346,13 +351,13 @@ body {
 .address .link:focus {
   color: #2196f3;
 }
-.link-add {
+/* .link-add {
   margin-top: 9px;
   margin-bottom: 9px;
 }
 .link-geolocation {
   margin-top: 20px;
-}
+} */
 
 /* ----------------Portfolio---------------- */
 
@@ -380,8 +385,8 @@ body {
   margin-bottom: 50px;
   padding: 6px 22px;
 }
-.button:hover,
-.button:focus {
+.buttons-list button:hover,
+.buttons-list button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -408,17 +413,10 @@ h2 {
 .project {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
+  gap: 30px;
 }
-.project-item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+.project-item {  
+  border: 1px solid #EEEEEE;
 }
 .project-item:hover,
 .project-item:focus {
@@ -426,10 +424,6 @@ h2 {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-}
-
-.project-item:nth-child(3n) {
-  margin-right: 0;
 }
 .project-item-title {
   font-size: 18px;
@@ -442,9 +436,9 @@ h2 {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 .project-item-words {
-  margin: 10px 24px 0px;
+padding-right: 24px;
+padding-left: 24px;
+padding-bottom: 20px;
 }
