@@ -98,6 +98,9 @@ body {
   align-items: center;
   padding-left: 0px;
 }
+.nav .logo{
+  margin-right: 93px;
+}
 .site-nav {
   display: flex;
 }
@@ -110,17 +113,22 @@ body {
   display: inline;
 }
 
-.site-nav .link-nav .current {
+.site-nav link-nav .current {
   color: #2196f3;
   display: inline;
+}
+.site-nav link-nav:last-child{
+  margin-right: 0px;
+}
+.site-nav .link-nav:first-child{
+  margin-left: 0;
 }
 .site-nav .link-nav:hover,
 .site-nav .link-nav:focus {
   color: #2196f3;
 }
-.link-nav {
-  margin-left: 25px;
-  margin-right: 25px;
+.site-nav li{
+  margin-right: 50px;
 }
 .site-nav .link {
   padding-top: 32px;
@@ -145,13 +153,6 @@ body {
   margin-left: 25px;
   padding-right: 0px;
 }
-/* .link-conn::before{
-  content: ;
-  widows: 10px;
-  height: 16px;
-  background-color: red;
-} */
-
 .connection .link:hover,
 .connection .link:focus {
   color: #2196f3;
@@ -218,12 +219,11 @@ body {
 /* ----------------Festure---------------- */
 
 .feature {
-
-  height: 248px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .features {
-  display: flex;
-  justify-self: space-between;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -241,8 +241,10 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.feature-list{
+.feature-list {
+  box-sizing: content-box;
   width: 270px;
+  height: 98px;  
 }
 
 
@@ -283,18 +285,16 @@ body {
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
-  margin-top: 94px;
 }
-
 .team-list-item {
   width: 270px;
   height: 428px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #FFFFFF;
 }
-
 .name {
   color: #212121;
   font-weight: 500;
@@ -305,11 +305,42 @@ body {
   margin-bottom: 10px;
   height: 19px;
 }
-.team .position {
+.position {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   height: 19px;
+}
+.team-list-links{  
+  width: 246px;
+  height: 44px;
+  margin-top: 16px;
+  /* display: flexbox; */
+  align-items: center;
+}
+.team-list-link{
+  display: inline-block;
+  
+  width: 44px;
+  height: 44px;
+  background-color:#FFFFFF;
+  /* background-size: 20px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.team-list-links .instagram{
+  background-image: url(../images/instagram.svg);
+}
+.team-list-links .twitter{
+  background-image: url(../images/twitter.svg);
+}
+.team-list-links .facebook{
+  background-image: url(../images/facebook.svg);
+}
+.team-list-links .in{
+  background-image: url(../images/in.svg);
 }
 
 /* ----------------Footer---------------- */
@@ -351,13 +382,6 @@ address{
 .address .link:focus {
   color: #2196f3;
 }
-/* .link-add {
-  margin-top: 9px;
-  margin-bottom: 9px;
-}
-.link-geolocation {
-  margin-top: 20px;
-} */
 
 /* ----------------Portfolio---------------- */
 
