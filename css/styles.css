@@ -5,6 +5,7 @@
   --primary-background: #ffffff;
   --secondary-background: #2f303a;
   --titles-color: #212121;
+  --icon-primay-color: #AFB1B8;
 }
 
 html {
@@ -173,6 +174,12 @@ body {
 .connection-link{
   margin-left: 30px;
 }
+.link-nav .ikon{
+  fill: var(--icon-primay-color);
+}
+.link-conn .ikon{
+  fill: var(--icon-primay-color);
+}
 
 
 
@@ -238,42 +245,45 @@ body {
 
 .feature {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
-  height: 248px;
-}
-.features {
-  padding-top: 94px;
-  padding-bottom: 0px;
-}
-.feature-list-title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-.feature-list-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-.feature-list {
-  box-sizing: content-box;
-  width: 270px;
-  height: 98px;
-  background: #F5F4FA;
-  border-radius: 4px;  
 }
 .feature-list{
-display: block;
-margin-left: auto;
-margin-right: auto;
+  width: 270;
+  padding-bottom: 0;
 }
+.feature-list{
 
+}
+.feature-list-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--titles-color);
+  margin-top: 30px;
+}
+.feature-list-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-top: 10px;
+}
+.feature-list-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
 
 
 /* ----------------What do we do---------------- */
@@ -375,6 +385,40 @@ margin-right: auto;
   justify-content: center;
   gap: 10px;
 }
+.position-list-item-link{
+  fill: var(--icon-primay-color);
+}
+/* ----------------Clients---------------- */
+
+.clients-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titles-color);
+  margin-bottom: 50px;
+}
+.clients-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-list-item{
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-list-item-link{
+  fill: var(--icon-primay-color);
+}
+
+
 
 /* ----------------Footer---------------- */
 
