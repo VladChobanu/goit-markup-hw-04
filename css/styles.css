@@ -7,7 +7,9 @@
   --titles-color: #212121;
   --icon-primay-color: #AFB1B8;
 }
-
+.ikon{
+  fill: var(--icon-primay-color);
+}
 html {
   box-sizing: border-box;
 }
@@ -180,8 +182,14 @@ body {
 .link-conn .ikon{
   fill: var(--icon-primay-color);
 }
-
-
+.link-nav:hover .ikon,
+.link-nav:focus .ikon{
+  fill: var(--accent-color);
+}
+.link-conn:hover .ikon,
+.link-conn:focus .ikon{
+  fill: var(--accent-color);
+}
 
 /* ----------------Hero---------------- */
 
@@ -245,17 +253,13 @@ body {
 
 .feature {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 30px;
 }
 .feature-list{
-  width: 270;
   padding-bottom: 0;
 }
-.feature-list{
 
-}
 .feature-list-title{
   font-family: 'Roboto';
   font-style: normal;
@@ -274,6 +278,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-top: 10px;
+  margin-bottom: 0;
 }
 .feature-list-block{
   display: flex;
@@ -340,39 +345,17 @@ body {
   text-align: center;
   margin-top: 30px;
 }
-.position {
+.profesion {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 16px;
-}
-.team-list-links{  
-  width: 246px;
-  height: 44px;
-  margin-top: 16px;
-  align-items: center;
 }
 .team-list-item{
   padding-bottom: 30px;
 }
-.team-list-link{
-  display: inline-block;  
-  width: 44px;
-  height: 44px;
-  background-color:#FFFFFF;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  border: 1px solid black;
-}
-.position-list-link{
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: blue;
-}
-.position-list-item-link{
+.workers-list-item-link{
   display: flex;
   width: 44px;
   height: 44px;
@@ -380,13 +363,22 @@ body {
   align-items: center;
   justify-content: center;
 }
-.position-list{
+.workers-list{
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.position-list-item-link{
-  fill: var(--icon-primay-color);
+.workers-list-item-link .ikon:hover,
+.workers-list-item-link .ikon:focus{
+fill: #FFFFFF;
+}
+.workers-list-item-link:hover,
+.workers-list-item-link:focus{
+  background-color:var(--accent-color);
+}
+.workers-list-item-link:hover .ikon,
+.workers-list-item-link:focus .ikon{
+  fill: #ffffff;
 }
 /* ----------------Clients---------------- */
 
@@ -405,22 +397,37 @@ body {
   justify-content: center;
   gap: 30px;
 }
-.clients-list-item{
+
+.clients-list-item-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-primay-color);
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.clients-list-item-link{
-  fill: var(--icon-primay-color);
+.clients-list-item-link .ikon:hover,
+.clients-list-item-link .ikon:focus{
+fill: var(--accent-color);
+}
+.clients-list-item-link:hover,
+.clients-list-item-link:focus{
+ border-color: var(--accent-color);
+}
+.clients-list-item-link:hover .ikon,
+.clients-list-item-link:focus .ikon{
+  fill: var(--accent-color);
 }
 
 
 
 /* ----------------Footer---------------- */
+
+.footer-content{
+  display: flex;
+}
 
 .footer {
   background-color: var(--secondary-background);
@@ -459,6 +466,50 @@ address{
 .address .link:focus {
   color: #2196f3;
 }
+.footer-block{
+  display:block;
+  margin-right: 70px;
+}
+.footer-invite{
+  display: block;  
+  padding-top: 12px;
+}
+.invite{
+   margin-bottom: 20px;
+}
+/* .location-list{
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+} */
+.location-list-item-link{
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.location-list{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.location-list-item-link{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.location-list .ikon{
+  fill: #FFFFFF;
+}
+.location-list-item-link:hover,
+.location-list-item-link:focus{
+  background-color: var(--accent-color);
+}
+
 
 /* ----------------Portfolio---------------- */
 
