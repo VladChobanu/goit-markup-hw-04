@@ -149,6 +149,8 @@ body {
   align-items: center;
 }
 .connection .link {
+  display: flex;
+  align-items: center;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -167,12 +169,7 @@ body {
 .connection .link:focus {
   color: #2196f3;
 }
-.link-nav::before{
-  content:1 ;
-  width: 16px;
-  height: 12px;
-  background-color: red;
-}
+
 .connection-link{
   margin-left: 30px;
 }
@@ -472,16 +469,13 @@ address{
   padding-top: 12px;
 }
 .invite{
-   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
-/* .location-list{
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-} */
 .location-list-item-link{
   display: flex;
   width: 44px;
