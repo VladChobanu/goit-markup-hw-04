@@ -5,9 +5,9 @@
   --primary-background: #ffffff;
   --secondary-background: #2f303a;
   --titles-color: #212121;
-  --icon-primay-color: #AFB1B8;
+  --icon-primay-color: #afb1b8;
 }
-.ikon{
+.ikon {
   fill: var(--icon-primay-color);
 }
 html {
@@ -23,27 +23,22 @@ ul {
   padding: 0px;
   margin: 0px;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 button {
   font-family: inherit;
 }
-
 ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-
 a {
   text-decoration: none;
 }
-
 body {
   background-color: var(--primary-background);
   color: var(--primary-text-color);
@@ -60,7 +55,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -105,7 +99,7 @@ body {
   align-items: center;
   padding-left: 0px;
 }
-.nav .logo{
+.nav .logo {
   margin-right: 93px;
 }
 .site-nav {
@@ -124,17 +118,17 @@ body {
   color: #2196f3;
   display: inline;
 }
-.site-nav link-nav:last-child{
+.site-nav link-nav:last-child {
   margin-right: 0px;
 }
-.site-nav .link-nav:first-child{
+.site-nav .link-nav:first-child {
   margin-left: 0;
 }
 .site-nav .link-nav:hover,
 .site-nav .link-nav:focus {
   color: #2196f3;
 }
-.site-nav li{
+.site-nav li {
   margin-right: 50px;
 }
 .site-nav .link {
@@ -162,7 +156,7 @@ body {
   margin-left: 25px;
   padding-right: 0px;
 }
-.connection .ikon{
+.connection .ikon {
   margin-right: 10px;
 }
 .connection .link:hover,
@@ -170,21 +164,21 @@ body {
   color: #2196f3;
 }
 
-.connection-link{
+.connection-link {
   margin-left: 30px;
 }
-.link-nav .ikon{
+.link-nav .ikon {
   fill: var(--icon-primay-color);
 }
-.link-conn .ikon{
+.link-conn .ikon {
   fill: var(--icon-primay-color);
 }
 .link-nav:hover .ikon,
-.link-nav:focus .ikon{
+.link-nav:focus .ikon {
   fill: var(--accent-color);
 }
 .link-conn:hover .ikon,
-.link-conn:focus .ikon{
+.link-conn:focus .ikon {
   fill: var(--accent-color);
 }
 
@@ -194,7 +188,7 @@ body {
   text-align: center;
   max-width: 1600px;
   height: 600px;
-   background-image: linear-gradient(
+  background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
@@ -208,7 +202,6 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .hero-title {
   color: #ffffff;
   background-color: none;
@@ -241,7 +234,6 @@ body {
   padding: 10px 32px;
 }
 
-
 /* ----------------Festure---------------- */
 
 .feature {
@@ -249,12 +241,11 @@ body {
   justify-content: center;
   gap: 30px;
 }
-.feature-list{
+.feature-list {
   padding-bottom: 0;
 }
-
-.feature-list-title{
-  font-family: 'Roboto';
+.feature-list-title {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -264,7 +255,7 @@ body {
   color: var(--titles-color);
   margin-top: 30px;
 }
-.feature-list-text{
+.feature-list-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -273,16 +264,15 @@ body {
   margin-top: 10px;
   margin-bottom: 0;
 }
-.feature-list-block{
+.feature-list-block {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
   width: 270px;
   height: 120px;
 }
-
 
 /* ----------------What do we do---------------- */
 
@@ -329,7 +319,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .name {
   color: #212121;
@@ -346,10 +336,10 @@ body {
   margin-top: 0px;
   margin-bottom: 16px;
 }
-.team-list-item{
+.team-list-item {
   padding-bottom: 30px;
 }
-.workers-list-item-link{
+.workers-list-item-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -357,26 +347,26 @@ body {
   align-items: center;
   justify-content: center;
 }
-.workers-list{
+.workers-list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 .workers-list-item-link .ikon:hover,
-.workers-list-item-link .ikon:focus{
-fill: #FFFFFF;
+.workers-list-item-link .ikon:focus {
+  fill: #ffffff;
 }
 .workers-list-item-link:hover,
-.workers-list-item-link:focus{
-  background-color:var(--accent-color);
+.workers-list-item-link:focus {
+  background-color: var(--accent-color);
 }
 .workers-list-item-link:hover .ikon,
-.workers-list-item-link:focus .ikon{
+.workers-list-item-link:focus .ikon {
   fill: #ffffff;
 }
 /* ----------------Clients---------------- */
 
-.clients-title{
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -385,44 +375,41 @@ fill: #FFFFFF;
   color: var(--titles-color);
   margin-bottom: 50px;
 }
-.clients-list{
+.clients-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
 
-.clients-list-item-link{
+.clients-list-item-link {
   display: flex;
   align-items: center;
   justify-content: center;
   fill: var(--icon-primay-color);
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .clients-list-item-link .ikon:hover,
-.clients-list-item-link .ikon:focus{
-fill: var(--accent-color);
+.clients-list-item-link .ikon:focus {
+  fill: var(--accent-color);
 }
 .clients-list-item-link:hover,
-.clients-list-item-link:focus{
- border-color: var(--accent-color);
+.clients-list-item-link:focus {
+  border-color: var(--accent-color);
 }
 .clients-list-item-link:hover .ikon,
-.clients-list-item-link:focus .ikon{
+.clients-list-item-link:focus .ikon {
   fill: var(--accent-color);
 }
 
-
-
 /* ----------------Footer---------------- */
 
-.footer-content{
+.footer-content {
   display: flex;
 }
-
 .footer {
   background-color: var(--secondary-background);
   padding-top: 60px;
@@ -431,7 +418,7 @@ fill: var(--accent-color);
 .logo-white {
   color: var(--secondary-text-color);
 }
-address{
+address {
   margin-top: 20px;
 }
 
@@ -439,10 +426,9 @@ address{
   color: var(--primary-text-color);
   font-style: normal;
 }
-.address li:not(:last-child){
+.address li:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .address .location {
   color: var(--secondary-text-color);
 
@@ -460,23 +446,23 @@ address{
 .address .link:focus {
   color: #2196f3;
 }
-.footer-block{
-  display:block;
+.footer-block {
+  display: block;
   margin-right: 70px;
 }
-.footer-invite{
-  display: block;  
+.footer-invite {
+  display: block;
   padding-top: 12px;
 }
-.invite{
+.invite {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
-.location-list-item-link{
+.location-list-item-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -484,23 +470,21 @@ address{
   align-items: center;
   justify-content: center;
 }
-.location-list{
+.location-list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
-.location-list-item-link{
+.location-list-item-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.location-list .ikon{
-  fill: #FFFFFF;
+.location-list .ikon {
+  fill: #ffffff;
 }
 .location-list-item-link:hover,
-.location-list-item-link:focus{
+.location-list-item-link:focus {
   background-color: var(--accent-color);
 }
-
 
 /* ----------------Portfolio---------------- */
 
@@ -556,9 +540,9 @@ h2 {
   flex-wrap: wrap;
   gap: 30px;
 }
-.project-item { 
-  width: 368px; 
-  border: 1px solid #EEEEEE;
+.project-item {
+  width: 368px;
+  border: 1px solid #eeeeee;
 }
 .project-item:hover,
 .project-item:focus {
