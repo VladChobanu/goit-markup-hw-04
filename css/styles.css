@@ -240,14 +240,10 @@ body {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: var(--accent-color);
   padding: 10px 32px;
 }
-.hero .button {
-  display: inline-block;
-  border: 1px solid #000000;
-  min-width: 216px;
-  height: 50px;
-}
+
 
 /* ----------------Festure---------------- */
 
@@ -295,6 +291,7 @@ body {
 
 .our-work {
   margin: 0 auto;
+  padding-top: 0;
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 94px;
@@ -514,12 +511,11 @@ address{
 /* ----------------Portfolio---------------- */
 
 /* ----------------Buttons section---------------- */
-.tabs {
-  padding: 94px 0px;
-}
+
 .buttons-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .buttons-list button {
   background: #f5f4fa;
@@ -534,7 +530,6 @@ address{
   height: 38px;
   margin-right: 4px;
   margin-left: 4px;
-  margin-bottom: 50px;
   padding: 6px 22px;
 }
 .buttons-list button:hover,
@@ -567,7 +562,8 @@ h2 {
   flex-wrap: wrap;
   gap: 30px;
 }
-.project-item {  
+.project-item { 
+  width: 368px; 
   border: 1px solid #EEEEEE;
 }
 .project-item:hover,
@@ -587,6 +583,8 @@ h2 {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .project-item-words {
   padding-top: 10px;
