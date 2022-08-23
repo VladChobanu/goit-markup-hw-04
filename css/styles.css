@@ -7,7 +7,7 @@
   --titles-color: #212121;
   --icon-primay-color: #afb1b8;
 }
-.ikon {
+.icon {
   fill: var(--icon-primay-color);
 }
 html {
@@ -106,7 +106,7 @@ body {
   display: flex;
 }
 .site-nav .link-nav {
-  color: #212121;
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -156,7 +156,7 @@ body {
   margin-left: 25px;
   padding-right: 0px;
 }
-.connection .ikon {
+.connection .icon {
   margin-right: 10px;
 }
 .connection .link:hover,
@@ -167,18 +167,18 @@ body {
 .connection-link {
   margin-left: 30px;
 }
-.link-nav .ikon {
-  fill: var(--icon-primay-color);
+.link-nav .icon {
+  fill: var(--primary-text-color);
 }
-.link-conn .ikon {
-  fill: var(--icon-primay-color);
+.link-conn .icon {
+  fill: var(--primary-text-color);
 }
-.link-nav:hover .ikon,
-.link-nav:focus .ikon {
+.link-nav:hover .icon,
+.link-nav:focus .icon {
   fill: var(--accent-color);
 }
-.link-conn:hover .ikon,
-.link-conn:focus .ikon {
+.link-conn:hover .icon,
+.link-conn:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -352,16 +352,16 @@ body {
   justify-content: center;
   gap: 10px;
 }
-.workers-list-item-link .ikon:hover,
-.workers-list-item-link .ikon:focus {
+.workers-list-item-link .icon:hover,
+.workers-list-item-link .icon:focus {
   fill: #ffffff;
 }
 .workers-list-item-link:hover,
 .workers-list-item-link:focus {
   background-color: var(--accent-color);
 }
-.workers-list-item-link:hover .ikon,
-.workers-list-item-link:focus .ikon {
+.workers-list-item-link:hover .icon,
+.workers-list-item-link:focus .icon {
   fill: #ffffff;
 }
 /* ----------------Clients---------------- */
@@ -392,16 +392,16 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-list-item-link .ikon:hover,
-.clients-list-item-link .ikon:focus {
+.clients-list-item-link .icon:hover,
+.clients-list-item-link .icon:focus {
   fill: var(--accent-color);
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
   border-color: var(--accent-color);
 }
-.clients-list-item-link:hover .ikon,
-.clients-list-item-link:focus .ikon {
+.clients-list-item-link:hover .icon,
+.clients-list-item-link:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -478,7 +478,7 @@ address {
 .location-list-item-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.location-list .ikon {
+.location-list .icon {
   fill: #ffffff;
 }
 .location-list-item-link:hover,
@@ -570,3 +570,4 @@ h2 {
   padding-left: 24px;
   padding-bottom: 20px;
 }
+
